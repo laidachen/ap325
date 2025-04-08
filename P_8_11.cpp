@@ -4,7 +4,7 @@ using namespace std;
 //設dp[n][1]為這點有設且含他下面的樹的最大歡樂指數
 //設dp[n][0]為這點沒設且含他下面的樹的最大歡樂指數
 //dp[n][1] = sigma(dp[k][0])+r[n]
-//dp[n][0] = sig
+//dp[n][0] = sigma(max(dp[k][1],dp[k][0])) ，因為這點不選下面的可以選或不選，取最大
 
 vector<int> out[N];
 int r[N] = {0};
